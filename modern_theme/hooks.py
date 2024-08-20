@@ -12,7 +12,8 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/modern_theme/css/modern_theme.css"
 # app_include_js = "/assets/modern_theme/js/modern_theme.js"
-
+app_include_js = ["theme.bundle.js"]
+app_include_css = ["theme.bundle.css"]
 # include js, css files in header of web template
 # web_include_css = "/assets/modern_theme/css/modern_theme.css"
 # web_include_js = "/assets/modern_theme/js/modern_theme.js"
@@ -163,6 +164,10 @@ app_license = "mit"
 # 	"frappe.desk.doctype.event.event.get_events": "modern_theme.event.get_events"
 # }
 #
+override_whitelisted_methods = {
+    "frappe.core.doctype.user.user.switch_theme" : "modern_theme.overide.theme.switch_theme"
+}
+
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
