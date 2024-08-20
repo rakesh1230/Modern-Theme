@@ -1,6 +1,6 @@
 ## modern_theme
 
-modern theme
+modern_theme
 
 #### License
 

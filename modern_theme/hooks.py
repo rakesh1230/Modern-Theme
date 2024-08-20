@@ -1,7 +1,7 @@
 app_name = "modern_theme"
 app_title = "modern_theme"
 app_publisher = "rakesh"
-app_description = "modern theme"
+app_description = "modern_theme"
 app_email = "rakesh@8848digital.com"
 app_license = "mit"
 # required_apps = []
